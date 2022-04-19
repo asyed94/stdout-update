@@ -52,7 +52,7 @@
     "lint": "npm-run-all lint:*",
     "lint:eslint": "rimraf coverage && eslint src --ext .ts",
     "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"**/*.{js,ts,tsx,md,yml,json}\"",
-    "prepare": "npm-run-all prepare:*",
+    "prepare": "npm-run-all prepare:* build",
     "prepare:config": "node --experimental-specifier-resolution=node node_modules/.bin/ts-package-shared-config",
     "prepare:docs": "node --experimental-specifier-resolution=node node_modules/.bin/docs-shared-config",
     "prepare:husky": "husky install",

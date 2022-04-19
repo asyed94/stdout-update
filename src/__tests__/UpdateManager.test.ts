@@ -3,8 +3,8 @@ import tty from 'tty';
 
 // eslint-disable-next-line jest/no-mocks-import
 import { WriteStream } from '../__mocks__/WriteStream.mock';
-import { Terminal } from '../Terminal';
-import { UpdateManager } from '../UpdateManager';
+import { Terminal } from '../Terminal.js';
+import { UpdateManager } from '../UpdateManager.js';
 
 const stdout = new WriteStream() as unknown as WriteStream & tty.WriteStream;
 const stderr = new WriteStream() as unknown as WriteStream & tty.WriteStream;
